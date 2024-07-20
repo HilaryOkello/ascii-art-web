@@ -1,0 +1,91 @@
+:root {
+    --blue-900: #06222F;
+    --blue-800: #042D41;
+    --blue-700: #023D5A;
+    --blue-600: #02537A;
+    --blue-500: #0673A9;
+    --blue-400: #1E99D6;
+    --blue-300: #4DB6EA;
+    --blue-200: #8CD3F6;
+    --blue-100: #B9E6FC;
+    --blue-50: #E3F6FF;
+    --blue-25: #F1FAFF;
+    --white: #FFFFFF;
+}
+body{
+    background-color: var(--blue-900);
+}
+.container{
+    width: 100vw;
+}
+h1 {
+    font-family: Tahoma, sans-serif;
+    color:var(--blue-25);
+    text-align: center;
+}
+form{
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+}
+.input-label{
+    color: var(--blue-25);
+    font-size: 1rem;
+}
+#input{
+    width: 60vw;
+    height: 10vh;
+    resize: none;
+    border: 1px solid var(--blue-100);
+    color: var(--blue-25);
+    background-color: var(--blue-900);
+    margin: none;
+    font-size: 1rem;
+}
+#input:focus {
+    outline: none;
+    border-color: var(--blue-100); /* Ensure border color remains the same */
+}
+/* For select dropdown */
+.my-select {
+    border: 1px solid var(--blue-100); /* Border color */
+    padding: 0.5rem; /* Padding around the select */
+    background-color: var(--blue-900);
+    color: var(--blue-25); /* Default text color */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.my-select:hover {
+    background-color: var(--blue-25); /* Background color on hover */
+    color: var(--blue-900); /* Text color on hover */
+}
+
+
+/* For generate button */
+.my-button {
+    border: 1px solid var(--blue-100); /* Border color */
+    padding: 0.5rem 1rem; /* Padding around the button */
+    background-color: var(--blue-900); /* Default background color */
+    color: var(--blue-25); /* Default text color */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+    margin-left: 20px;
+}
+
+.my-button:hover {
+    background-color: var(--blue-50); /* Background color on hover */
+    color: var(--blue-900); /* Text color on hover */
+}
+
+.result{
+    width: 60vw;
+    min-height: 15vh;
+    max-height: 50vh; /* Limit maximum height if needed */
+    overflow: auto; /* Enable scrollbars when content exceeds height */
+    margin: 20px auto;
+    border: 1px solid var(--blue-100); /* Add border with blue-100 color */
+    color: var(--blue-25); /* Adjust text color for readability */
+    font-size: 0.5rem; /* Adjust font size as necessary */
+    font-family: monospace; /* Ensure monospace font for ASCII art */
+    white-space: pre; /* Preserve whitespace and line breaks */
+}
