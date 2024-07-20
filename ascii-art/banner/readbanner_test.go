@@ -34,10 +34,9 @@ func TestReadBannerFile(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if err := os.Chdir(".."); err != nil {
+			if err := os.Chdir("../.."); err != nil {
 				t.Fatalf("Failed to change working directory: %v", err)
 			}
-
 			// Ensure the working directory is reverted back after the test
 			t.Cleanup(func() {
 				if err := os.Chdir(originalWD); err != nil {
